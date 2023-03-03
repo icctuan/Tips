@@ -1,6 +1,6 @@
 # Tips
 
-&nbsp;![](https://github.com/icctuan/Tips/raw/main/img/newlocation.svg) 工作日常问题记录&nbsp;&nbsp; | &nbsp;&nbsp;[算法](https://github.com/icctuan/Tips/tree/main/Algorithm)&nbsp;&nbsp;
+&nbsp;![](https://github.com/icctuan/Tips/raw/main/img/location16.svg) 工作日常问题记录&nbsp;&nbsp; | &nbsp;&nbsp;[算法](https://github.com/icctuan/Tips/tree/main/Algorithm)&nbsp;&nbsp;
 
 ## Node.js
 
