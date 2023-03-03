@@ -1,6 +1,11 @@
 # Tips
 
-## &nbsp;<img src="https://github.com/icctuan/Tips/raw/main/img/location32.svg" height="25px" /> 工作日常问题记录&nbsp;&nbsp; | &nbsp;&nbsp;[算法](https://github.com/icctuan/Tips/tree/main/Algorithm)&nbsp;&nbsp;
+## &nbsp;<img src="https://github.com/icctuan/Tips/raw/main/img/location32.svg" height="25px" /> 问题记录&nbsp;&nbsp; | &nbsp;&nbsp;[算法](https://github.com/icctuan/Tips/tree/main/Algorithm)&nbsp;&nbsp;
+
+### JavaScript
+
+[嵌套对象的解构赋值 和 默认值生效机制](https://github.com/icctuan/Tips/issues/3)
+[for of 与 for in](https://github.com/icctuan/Tips/issues/4)
 
 ### Node.js
 
