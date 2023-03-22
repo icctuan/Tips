@@ -1,3 +1,5 @@
+// 找出一个数组中两个元素相加 等于target 的 元素的index
+
 const twoSum = function (nums, target) {
   for (let i = 0; i < nums.length - 1; i++) {
     const searchNums = nums.slice(i + 1);
