@@ -1,4 +1,4 @@
-// 多维数组转一维数组
+// 多维数组展开
 const arr = [1, [[4, 5, 6], 2, [[[7, 8, 9]]], 3]];
 
 function spreadArray(n) {
@@ -13,7 +13,9 @@ function spreadArray(n) {
       }
     });
   }
+
   mapArray(n);
+
   return xArray;
 }
 
