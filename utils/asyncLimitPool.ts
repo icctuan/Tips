@@ -9,7 +9,7 @@
 export async function asyncPool(
   poolLimit: number,
   array: any[],
-  iteratorFn: (params: never) => Promise<unknown>,
+  iteratorFn: (params: (typeof array)[number]) => Promise<unknown>,
   allSettled?: boolean
 ) {
   const taskPool: Promise<any>[] = []; // 任务池
@@ -39,7 +39,7 @@ export async function asyncPool(
 }
 
 // 使用示例：分片上传控制并发
-let chunkList = [],
+let chunkList: any[] = [],
   retryTimes = 3,
   limit = 4,
   uploadPartFile: (params: (typeof chunkList)[number]) => Promise<any>;
