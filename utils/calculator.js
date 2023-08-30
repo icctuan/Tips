@@ -4,7 +4,7 @@
 function myCalculator(n) {
   class Calculator {
     constructor(val) {
-      this.value = val;
+      this.value = val ?? 0;
     }
     add(o) {
       this.value += o;
