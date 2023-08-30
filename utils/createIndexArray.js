@@ -8,6 +8,7 @@ const newArr = c.map((item, index) => index);
 
 console.log(newArr);
 
+// 计算某个区间的元素之和
 const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 const d = a.slice(0, 10).reduce((prev, n) => prev + n, 0);
 console.log(d);
