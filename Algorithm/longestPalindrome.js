@@ -26,7 +26,6 @@ var longestPalindrome = (s) => {
 
     // 记录更长的相同字符的左右指针位置
     if (r - l > right - left) {
-      // 长度
       right = r;
       left = l;
     }
