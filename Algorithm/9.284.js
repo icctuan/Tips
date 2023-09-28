@@ -6,7 +6,9 @@
  * @param {number[]} nums
  * @return {number}
  */
-var jump = function (nums) {};
+var jump = function (nums) {
+  // l=1, t=length -1
+};
 
 jump([2, 3, 1, 1, 4]); // 2
 // 跳到最后一个位置的最小跳跃数是 2。从下标为 0 跳到下标为 1 的位置，跳 1 步，然后跳 3 步到达数组的最后一个位置。

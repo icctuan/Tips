@@ -6,7 +6,19 @@
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function (prices) {};
+var maxProfitI = function (prices) {
+  const n = prices.length;
+  let benefit = 0;
+  for (let i = 0; i < n - 1; i++) {
+    let start = prices[i],
+      after = prices.slice(i + 1),
+      max = Math.max(...after);
+    if (max - start > benefit) {
+      benefit = max - start;
+    }
+  }
+  return benefit;
+};
 
 maxProfit([7, 1, 5, 3, 6, 4]); // 5
 // 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格；同时，你不能在买入前卖出股票。

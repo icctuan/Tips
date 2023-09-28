@@ -5,9 +5,17 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var canJump = function (nums) {};
-canJump([2, 3, 1, 1, 4]); // true
+var canJumpI = function (nums) {
+  let i = nums[0],
+    end = nums.length - 1;
+  while (i < end) {
+    if (nums[i] === 0) return false;
+    i += nums[i];
+  }
+  return i === end;
+};
+console.log(canJumpI([2, 3, 1, 1, 4])); // true
 // 可以先跳 1 步，从下标 0 到达下标 1, 然后再从下标 1 跳 3 步到达最后一个下标。
 
-canJump([3, 2, 1, 0, 4]); // false
+console.log(canJumpI([3, 2, 1, 0, 4])); // false
 // 无论怎样，总会到达下标为 3 的位置。但该下标的最大跳跃长度是 0 ， 所以永远不可能到达最后一个下标。
