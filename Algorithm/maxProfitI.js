@@ -6,15 +6,16 @@
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfitI = function (prices) {
+var maxProfit = function (prices) {
   const n = prices.length;
-  let benefit = 0;
-  for (let i = 0; i < n - 1; i++) {
-    let start = prices[i],
-      after = prices.slice(i + 1),
-      max = Math.max(...after);
-    if (max - start > benefit) {
-      benefit = max - start;
+  if (n < 2) return 0;
+  let benefit = 0,
+    minPrices = prices[0];
+  for (let i = 1; i < n; i++) {
+    if (prices[i] < minPrices) {
+      minPrices = prices[i];
+    } else {
+      benefit = Math.max(benefit, prices[i] - minPrices);
     }
   }
   return benefit;
