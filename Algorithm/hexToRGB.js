@@ -23,5 +23,24 @@ const hexToRGB = (str) => {
 
   return `rgb(${num1}, ${num2}, ${num3})`;
 };
-
 console.log(hexToRGB("#DC143C"));
+
+const rgbToHex = (str) => {
+  const regexp = /^rgb\((\d+),\s*(\d+),\s*(\d+)\)/;
+  const isRGB = regexp.exec(str); // str.match(regexp)有相同结果
+  if (!isRGB) return null;
+
+  let hexStr = "#";
+  for (let i = 1; i <= 3; i++) {
+    const num = isRGB[i];
+    if (num > 255 || num < 0) {
+      return null;
+    } else {
+      const str16 = Number(num).toString(16);
+      hexStr += num > 16 ? str16 : `0${str16}`;
+    }
+  }
+
+  return hexStr;
+};
+console.log(rgbToHex("rgb(220, 20, 60)"));
